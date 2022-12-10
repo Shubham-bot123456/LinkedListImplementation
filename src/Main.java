@@ -8,11 +8,16 @@ public class Main {
         linkedList.addLast(3);
         linkedList.addLast(4);
         linkedList.addLast(5);
-        linkedList.addFirst(6);
+        linkedList.addLast(100);
+        linkedList.addLast(6);
+        System.out.println(linkedList.size());
         /*
         10<-20<-30
          */
-        linkedList.reverse();
+//        linkedList.reverse();
+        System.out.println(linkedList.kthNodeFromLast(2));
+        System.out.println(linkedList.kthNodeinOneGo(2));
         System.out.println(Arrays.toString(linkedList.toArray()));
     }
+
 }
